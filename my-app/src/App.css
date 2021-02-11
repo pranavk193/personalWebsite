@@ -2,9 +2,17 @@
 
 .App {
   text-align: center;
+  background-color: #282c34;
+  font-family: 'Geo', sans-serif;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  min-height: 20vh;
 }
-.Breadcrumb {
-  text-align: right;
+.ImageSlider {
+  align-items: center;
+  justify-content: center;
 }
 
 .App-logo {

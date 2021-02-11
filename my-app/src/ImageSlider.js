@@ -13,7 +13,7 @@ import './ImageSlider.css';
 function ImageSlider() {
     return (
         <div className='ImageSlider'> 
-            <AliceCarousel autoPlay infinite autoPlayInterval="3000">
+            <AliceCarousel autoPlay disableButtonsControls infinite disableSlideInfo="false" autoPlayInterval="3000">
                 <img src={image1} className="sliderimg" alt=""/>
                 <img src={image2} className="sliderimg" alt=""/>
             </AliceCarousel>

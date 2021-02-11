@@ -10,6 +10,7 @@
     "bootstrap": "^4.6.0",
     "react": "^17.0.1",
     "react-alice-carousel": "^2.3.0",
+    "react-awesome-slider": "^4.1.0",
     "react-bootstrap": "^1.4.3",
     "react-bootstrap-carousel": "^4.1.1",
     "react-cool-text": "^1.0.16",

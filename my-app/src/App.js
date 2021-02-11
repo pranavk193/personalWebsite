@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Resume from './Resume';
 import Hobbies from './Hobbies';
+import BootstrapSlider from './BootstrapSlider';
 import Home from './Home';
 import ImageSlider from './ImageSlider';
 import Breadcrumb from 'react-bootstrap/Breadcrumb'
@@ -17,7 +18,6 @@ import {
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
       <Router>
       <div>
         <nav>
@@ -41,7 +41,8 @@ function App() {
             <Resume />
           </Route>
           <Route path="/hobbies">
-            <Hobbies />
+            <h2>Hobbies</h2>
+            <BootstrapSlider />
           </Route>
           <Route path="/">
             <Home />
@@ -51,8 +52,6 @@ function App() {
       </div>
     </Router>
 
-
-      </header>
     </div>
   );
 }
