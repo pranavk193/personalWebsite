@@ -4,6 +4,7 @@ import Resume from './Resume';
 import Hobbies from './Hobbies';
 import BootstrapSlider from './BootstrapSlider';
 import Home from './Home';
+import React from 'react';
 import ImageSlider from './ImageSlider';
 import Breadcrumb from 'react-bootstrap/Breadcrumb'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,13 +16,28 @@ import {
   Link
 } from "react-router-dom";
 
-function App() {
+class App extends React.Component{
+  constructor() {
+    super()
+    this.state = {
+      animate: true,
+    }
+  }
+
+  componentDidMount() {
+      this.setState({
+        animate: true,
+      })
+  }
+  render() {
   return (
-    <div className="App">
+    <div className={
+      this.state.animate ? "fade-in-hello hello span" : "hello span"
+    }>
       <Router>
-      <div>
+      <div className="App-header">
         <nav>
-          <ul>
+          <ul id="ul_top_hypers">
             <li>
               <Link to="/">Home</Link>
             </li>
@@ -33,9 +49,11 @@ function App() {
             </li>
           </ul>
         </nav>
+        </div>
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
+      <div className="App">
         <Switch>
           <Route path="/resume">
             <Resume />
@@ -51,9 +69,9 @@ function App() {
         </Switch>
       </div>
     </Router>
-
     </div>
   );
+}
 }
 
 export default App;

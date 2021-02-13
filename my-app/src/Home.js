@@ -1,10 +1,14 @@
+import './Home.css';
 function Home() {
-    return <div><p>
-    Pranav Kanukollu
+    return <div class="typewriter">
+        <p>
+            Pranav Kanukollu
         </p>
-<a>
-Hello, World! I am a software engineer with a passion for learning new things. I also love cricket and basketball.
-</a>
-</div>;
+        <p>
+            Hello, World! I am a software engineer with a passion for learning new things.
+        </p>
+        <br />
+        <br />
+        </div>;
 }
 export default Home;
